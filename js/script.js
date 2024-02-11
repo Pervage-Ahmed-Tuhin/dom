@@ -94,4 +94,10 @@ bodorul.append(li);
 
 // console.log(bodorul.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
 
+//This is used to transform an array like element into an original array Array.form()
+//Array.form(name from which array like element).map(function(item){
 
+// }
+// items.style.color = 'yellow';
+//  console.log(item);
+// })
