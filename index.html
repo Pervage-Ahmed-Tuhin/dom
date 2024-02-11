@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+<!-- 
+    <header>
+
+        <h1>This is Practice task</h1>
+        <a href="#" id="ancor">gogole-me</a>
+        <nav>
+            <ul id="lolitas">
+                <li class="My-food">My food - 1</li>
+                <li class="My-food">My food - 2</li>
+                <li class="My-food">My food - 3</li>
+                <li class="My-food">My food - 4</li>
+                <li class="My-food">My food - 5</li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <main>
+
+        <!-- <section>
+            <div id="section1-id">
+                <h2 id="header1">This is a section</h2>
+                <ul id="innerUl" class="box tox lox kox pox">
+                    <li class="innerList">Item-1</li>
+                    <li class="innerList">Item-2</li>
+                    <li class="innerList">Item-3</li>
+                    <li class="innerList">Item-4</li>
+                </ul>
+            </div>
+            <div id="section-main-box">
+
+            </div>
+        </section> -->
+        <!-- 
+        <section id="section-main-box">
+
+        </section> -->
+
+        <section id="comment-container">
+            <h1>This is the comment section</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, blanditiis amet. Eius et blanditiis quasi nemo, sapiente odio in hic id modi laudantium ut iusto dolor earum adipisci! Nulla, autem.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, blanditiis amet. Eius et blanditiis quasi nemo, sapiente odio in hic id modi laudantium ut iusto dolor earum adipisci! Nulla, autem.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, blanditiis amet. Eius et blanditiis quasi nemo, sapiente odio in hic id modi laudantium ut iusto dolor earum adipisci! Nulla, autem.
+            </p>
+        </section>
+
+        <section>
+            <textarea name="" id="text-container" cols="30" rows="10"></textarea>
+            <br>
+            <button id="button-clicker">Post</button>
+        </section>
+    </main>
+
+    <footer id="footerka-foot">
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+
+        document.getElementById('button-clicker').addEventListener('click',function(){
+
+            const commentBox = document.getElementById('text-container');
+
+            const comment = commentBox.value;
+
+            const p = document.createElement('p');
+
+            p.innerText = comment;
+
+            const mainContainer = document.getElementById('comment-container');
+
+            mainContainer.appendChild(p);
+
+            commentBox.value ='';
+
+           
+        })
+        
+    </script>
+</body>
+
+</html>
